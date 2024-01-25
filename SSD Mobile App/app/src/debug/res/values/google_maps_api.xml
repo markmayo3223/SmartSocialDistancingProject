@@ -1,0 +1,34 @@
+<resources>
+
+    <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+    <!--
+
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=C3:64:15:B0:EA:2D:A3:02:D0:27:C9:95:1B:E7:D5:5A:11:12:A8:C2%3Bcom.uccpe.fac19
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.uccpe.fac19
+
+    SHA-1 certificate fingerprint:
+    C3:64:15:B0:EA:2D:A3:02:D0:27:C9:95:1B:E7:D5:5A:11:12:A8:C2
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCyuHKj_DFn_nYEYWhG88urnUzWzz9ARnk</string>
+</resources>

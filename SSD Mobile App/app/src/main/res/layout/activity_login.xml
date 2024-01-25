@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="235dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Smartwatch For Social Distancing"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.781"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmailSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassSignIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="308dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="148dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="380dp"
+            android:background="#53E116"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/login"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="167dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="528dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/don_t_have_an_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.217"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signUpHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="@string/sign_up_here"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_green_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUpText" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="112dp"
+            android:layout_height="132dp"
+            app:srcCompat="@mipmap/ic_watch"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

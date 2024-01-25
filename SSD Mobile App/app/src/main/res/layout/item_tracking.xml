@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ic_watch_background"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/track_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_my_location" />
+
+        <TextView
+            android:id="@+id/track_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/track_image_view"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Line 1"
+            android:textColor="@color/places_autocomplete_prediction_primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/track_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/track_date_text"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Line 2"
+            android:textColor="@color/places_autocomplete_prediction_primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_date_text"
+            android:layout_toEndOf="@id/track_image_view"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/latitude"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/places_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lat_text"
+            android:layout_toEndOf="@id/track_image_view"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/location"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lat_text"
+            android:layout_toEndOf="@id/places_text"
+            android:fontFamily="@font/comfortaa"
+            android:text="Line 5"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/track_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_date_text"
+            android:layout_toEndOf="@id/lat_text"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="Line 3"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/lng_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_date_text"
+            android:layout_toEndOf="@id/track_latitude"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/longitude"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/track_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/track_date_text"
+            android:layout_toEndOf="@id/lng_text"
+            android:fontFamily="@font/comfortaa"
+            android:text="Line 4"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

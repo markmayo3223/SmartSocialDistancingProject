@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_margin="8dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ic_watch_background"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/contactImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_people_arrows" />
+
+        <TextView
+            android:id="@+id/userConTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/contactImageView"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="line 1"
+            android:textColor="@color/places_autocomplete_prediction_primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/userConTextView"
+            android:fontFamily="@font/comfortaa_bold"
+            android:paddingStart="5dp"
+            android:text="line 5"
+            android:textColor="@color/places_autocomplete_prediction_primary_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_text"
+            android:layout_toEndOf="@id/contactImageView"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/latitude"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/latTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_text"
+            android:layout_toEndOf="@id/lat_text"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="line 3"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/lng_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_text"
+            android:layout_toEndOf="@id/latTextView"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/longitude"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/lngTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_text"
+            android:layout_toEndOf="@id/lng_text"
+            android:fontFamily="@font/comfortaa"
+            android:paddingLeft="5dp"
+            android:text="line 4"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/places_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lat_text"
+            android:layout_toEndOf="@id/contactImageView"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/location"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/loc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lat_text"
+            android:layout_toEndOf="@id/places_text"
+            android:fontFamily="@font/comfortaa"
+            android:text="Line 6"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userConTextView"
+            android:layout_toEndOf="@id/contactImageView"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="5dp"
+            android:text="@string/timestamp"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userConTextView"
+            android:layout_toEndOf="@id/time_text"
+            android:fontFamily="@font/comfortaa"
+            android:text="line 2"
+            android:textColor="@color/places_autocomplete_prediction_primary_text" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

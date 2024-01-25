@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/tos_Button"
+        android:layout_width="200dp"
+        android:layout_height="50"
+        android:layout_margin="5dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/ic_watch_background"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/terms_of_service"
+        android:textColor="@color/places_autocomplete_prediction_primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/pp_Button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/ic_watch_background"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/privacy_policy_no_dot"
+        android:textColor="@color/places_autocomplete_prediction_primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tos_Button"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/ic_watch_background"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/logout"
+        android:textColor="@color/places_autocomplete_prediction_primary_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pp_Button"
+        app:layout_constraintVertical_bias="0.331" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton" />
+
+    <TextView
+        android:id="@+id/tele_hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/telephone_hotline"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotline_header" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/covid19_web"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cell_hotline" />
+
+    <TextView
+        android:id="@+id/cell_hotline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/cellular_hotline"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tele_hotline" />
+
+    <TextView
+        android:id="@+id/hotline_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="604dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Baguio COVID-19 Hotlines"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/serviceSwitch"
+        android:layout_width="212dp"
+        android:layout_height="71dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text="@string/location_services"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.141"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="123dp"
+        android:src="@mipmap/ic_map1"
+        app:layout_constraintEnd_toStartOf="@+id/serviceSwitch"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="336dp"
+        android:src="@mipmap/ic_privacy1"
+        app:layout_constraintEnd_toStartOf="@+id/pp_Button"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="110dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="204dp"
+        android:src="@mipmap/ic_terms1"
+        app:layout_constraintEnd_toStartOf="@+id/tos_Button"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="110dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="460dp"
+        android:src="@mipmap/ic_logout1"
+        app:layout_constraintEnd_toStartOf="@+id/logoutButton"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
